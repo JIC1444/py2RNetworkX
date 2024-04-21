@@ -61,7 +61,7 @@ def createGraph(df_location, phyla, about_location, save_location):
     for _,row in df.iterrows():
       if row[phylum] != 0:
         if row[phylum] == largest_connection:
-          G.add_edge(phylum, row["Location"], color = "red") 
+          G.add_edge(phylum, row["Location"], color = "skyblue") 
         else:
           G.add_edge(phylum, row["Location"], color = (0.871, 0.871, 0.871)) 
 
