@@ -5,7 +5,7 @@ import networkx as nx
 import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 
-def CreateNXGraph(df_location, phyla, about_location, save_location, gtype):
+def createGraph(df_location, phyla, about_location, save_location, gtype):
   df = pd.read_csv(df_location, sep=" ", names = None) 
   df = df.reset_index()
   df = df.rename(columns={"index": "Location"})
