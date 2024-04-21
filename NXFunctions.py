@@ -67,7 +67,6 @@ def createGraph(df_location, phyla, about_location, save_location):
 
 
   figure, ax = plt.subplots()
-  print(G.edges)
   colors = [G[u][v]["color"] for u,v in G.edges]
   nx.draw(G, pos, ax = ax, 
           node_color = colour_map,
