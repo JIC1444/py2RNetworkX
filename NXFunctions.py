@@ -5,7 +5,7 @@ import networkx as nx
 import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 
-def createGraph(df_location, phyla, about_location, save_location, gtype):
+def createGraph(df_location, phyla, about_location, save_location):
   df = pd.read_csv(df_location, sep=" ", names = None) 
   df = df.reset_index()
   df = df.rename(columns={"index": "Location"})
@@ -85,4 +85,4 @@ def createGraph(df_location, phyla, about_location, save_location, gtype):
   ax.tick_params(left=True, bottom=True, labelleft=True, labelbottom=True)
   plt.show()
 
-  #fig.savefig("2.png", bbox_inches='tight',pad_inches=0)
+  fig.savefig(save_location)
