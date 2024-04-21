@@ -84,4 +84,4 @@ def createGraph(df_location, phyla, about_location, save_location):
   ax.tick_params(left=True, bottom=True, labelleft=True, labelbottom=True)
   plt.show()
 
-  fig.savefig(save_location)
+  figure.savefig(save_location)
